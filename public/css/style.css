@@ -9,7 +9,7 @@
 }
 
 :root {
-  --primary-color: #FAEAB1;
+  --primary-color: #030303;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background: #f4f4f4;
+  background: #272626;
 }
 
 /* Navbar */
@@ -51,17 +51,27 @@ body {
 
 /* Showcase */
 .showcase {
-  height: 300px;
+  height: 500px;
   width: 100%;
   background: var(--primary-color);
 }
 
 .showcase h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #ffffff;
   text-align: center;
   padding: 1rem 0;
 }
+
+h2, h3, h4 {
+  color: #fff;
+  padding: .2rem 0;
+}
+
+a {
+  color: #fff;
+}
+
 
 .showcase form {
   display: flex;
@@ -75,7 +85,7 @@ body {
 .showcase form input,
 form select {
   font-size: 20px;
-  width: 400px;
+  width: 500px;
   max-width: 500px;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -88,8 +98,8 @@ form button {
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
-  background: #C58940;
-  color: #fff;
+  background: #f40000;
+  color: #ffffff;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -97,6 +107,10 @@ form button {
 form button:hover {
   transform: scale(1.1);
 }
+
+/* .form-control {
+  height: 40px;;
+} */
 
 /* Image */
 
