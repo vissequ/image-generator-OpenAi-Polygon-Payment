@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shiba Inu NFT Generator</title>
     <link rel="stylesheet" href="./css/spinner.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/script.js" defer></script>
@@ -13,20 +14,45 @@
 <body>
   
       <main>
+        <!-- <button class="enableEthereumButton">Connect Metamask</button> -->
+        <!-- <button class="sendEthButton btn">Send Eth</button> -->
         <section class="showcase">
           <form id="image-form">
+            <h1>Shiba Inu</h1>
+            <h3>It may take up to 1 minute or longer to generate your image.</h3>
+            <!-- <h3>Create your own Shiba Inu digital art using artificial intelligence for 1 MATIC + gas!</h3>
+            <h4>You OWN the copyright! Turn it into an NFT or just share it with your friends!</h4> -->
+            <br>
             <div class="form-control">
-              <input type="text" id="prompt" placeholder="Enter Text" />
+              <input type="text" id="prompt" placeholder="Describe image (ex: dancing on a cosmic rainbow)" />
             </div>
             <!-- size -->
             <div class="form-control">
-              <select name="size" id="size">
+              <!-- <select name="size" id="size">
                 <option value="small">Small</option>
-                <option value="medium" selected>Medium</option>
-                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="large" selected>Large</option>
+              </select>
+              <br> -->
+              <select name="style" id="style">
+                <option value="digital art" selected>Digital Art</option>
+                <option value="cyberpunk">Cyberpunk</option>
+                <option value="synthwave">Synthwave</option>
+                <option value="comic">Comic</option>
+                <option value="3D">3D</option>
+                <option value="one-line">One-line</option>
+              </select>
+              <br>
+              <select name="color" id="color">
+                <option value="" selected>None</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
               </select>
             </div>
-            <button type="submit" class="btn">Generate</button>
+            <button type="submit" class="btn">Generate for 1 MATIC</button>
+            <br>
+            <p><a href="https://discord.gg/HkFgZyDCmn" target="_blank">Need Help?</a></p>
+
           </form>
         </section>
   
@@ -39,5 +65,7 @@
       </main>
   
       <div class="spinner"></div>
+
+      <p></p>
 </body>
 </html>
